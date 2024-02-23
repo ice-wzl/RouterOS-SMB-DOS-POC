@@ -1,6 +1,6 @@
 # RouterOS-SMB-DOS-POC
 This repository contains a working POC for a Denial of Service bug that is found on the SMB service for RouterOS devices ranging from `6.40.5 - 6.44` and `6.48.1 - 6.49.10`.  Only the `x86` arch has been tested.
-**Note: This version range is likely to expand as more testing is done on different device versions and architectures. 
+- **Note: This version range is likely to expand as more testing is done on different device versions and architectures.**
 ## Overview
 - This repository contains POC code for two previously unknown vulnerabilities in the RouterOS SMB service. The poc script called `smb_crash.py` contains both versions of the exploit. The script will prompt the user to enter their target version as seen below.  Due to the similarity and nature of the bug, I chose to include both vulnerabilities in one script 
 ````
@@ -85,7 +85,8 @@ Mapped address spaces:
         0xffffe000 0xfffff000     0x1000        0x0 [vdso]
 ````
 - This is what the `backtrace.log` looked like after the crash
-````/flash/rw/logs/backtrace.log
+````
+/flash/rw/logs/backtrace.log
 2024.02.17-17:16:22.17@0: /nova/bin/smb
 2024.02.17-17:16:22.17@0: --- signal=11 --------------------------------------------
 2024.02.17-17:16:22.17@0:
