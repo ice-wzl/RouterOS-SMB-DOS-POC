@@ -1,4 +1,5 @@
 #!/usr/bin/python3 
+# Founded by ice-wzl in conjunction with Solstice Cyber Solutions
 import argparse
 import sys
 import socket 
