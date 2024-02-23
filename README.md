@@ -188,6 +188,8 @@ gs             0x33     51
 00000060  00 2e 00 31 00 35 00 2e  00 37 00 37 00 5c 00 70   ...1.5.. .7.7.\.p
 00000070  00 75 00 62 00                                     .u.b.
 ````
+# Credits 
+- Founder: `ice-wzl` in conjunction with `Solstice Cyber Solutions`
 
 
 
