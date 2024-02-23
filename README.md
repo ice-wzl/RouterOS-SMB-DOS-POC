@@ -189,7 +189,7 @@ gs             0x33     51
 00000070  00 75 00 62 00                                     .u.b.
 ````
 # Credits 
-- Founder: `ice-wzl` in conjunction with `Solstice Cyber Solutions`
+- Founder: `ice-wzl`, `dev-intr` in conjunction with `Solstice Cyber Solutions`
 
 
 
