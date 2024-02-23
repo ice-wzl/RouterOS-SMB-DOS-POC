@@ -11,7 +11,7 @@ python3 smb_crash.py -t 192.168.15.106 -p 445
 Enter 1 or 2:
 -->
 ````
-- Upon executing the script against a vulerable version you will observe the port from going open to closed. For option `1` targets, it is unlikely that the service will reopen, requireing a manual restart from the admin or device owner.  In testing the high version option `2` the kernel will at times restart the service after about 60 seconds, at which time you can utilize the script again.  After sending the DOS condition a second time it was excceedingly rare for the kernel to restart the service a third time.  I am unsure as to why the kernel will sometimes decide to bring the service back up.  I plan to example that further via debugging and reverse engineering.
+- Upon executing the script against a vulerable version you will observe the port from going open to closed. For option `1` targets, it is unlikely that the service will reopen, requireing a manual restart from the admin or device owner.  In testing the high version option `2` the kernel will at times restart the service after about 60 seconds, at which time you can utilize the script again.  After sending the DOS condition a second time it was excceedingly rare for the kernel to restart the service a third time.  I am unsure as to why the kernel will sometimes decide to bring the service back up.  I plan to examine that further via debugging and reverse engineering.
 ## Analysis 
 - I am quite certain that these two vulnerabilities can be taken further, very possibly resulting in some sort of pwn. However, I was unable to progress them any further. Furthermore, I was unable to find a reliable way to root the `6.49.10` device, thus getting `gdb` attatched to the `smb` process was not successful.
 - Due to the plethora of vulnerabilities in the lower RouterOS versions, I was able to attatch `gbd` to the `smb` process and debug the crash condition.
@@ -32,7 +32,7 @@ died with signal 11 on Sat Feb 17 21:05:51 2024
 
 Segmentation fault
 ````
-- Furthermore when attatching to the process with `gdb` and causing the crash condition we can see these values on the stack
+- Furthermore when attached to the process with `gdb` and causing the crash condition we can see these values on the stack
 ````
 (gdb) info reg
 eax            0x1f00006e       520093806
