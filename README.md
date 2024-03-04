@@ -1,4 +1,6 @@
-# RouterOS-SMB-DOS-POC
+# CVE-2024-27686: RouterOS-SMB-DOS-POC
+# Update
+As of 3/4/24 Mitre has assigned CVE-2024-27686 to this issue.
 This repository contains a working POC for a Denial of Service bug that is found on the SMB service for RouterOS devices ranging from `6.40.5 - 6.44` and `6.48.1 - 6.49.10`.  Only the `x86` arch has been tested.
 - **Note: This version range is likely to expand as more testing is done on different device versions and architectures.**
 ## Overview
